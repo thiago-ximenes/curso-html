@@ -5,6 +5,7 @@
     src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 body {
+    font-family: Arial, sans-serif;
     background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
@@ -12,6 +13,15 @@ body {
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 div#interface {
@@ -23,14 +33,15 @@ div#interface {
 }
 
 header#cabecalho img#icone {
-    position: absolute;
-    left: 780px;
-    top: 70px;
+    position: relative;
+    left: 695px;
+    top: -50px;
 }
 
 header#cabecalho {
     border-bottom: 1px #606060 solid;
     height: 150px;
+    margin-top: -55px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
@@ -49,6 +60,80 @@ header#cabecalho h2 {
     color: #888888;
     padding: 0px;
     margin-top: 0px;
+}
+
+article#artigo-principal h2 {
+    background-color: #dddddd;
+    font-size: 12pt;
+    color: #606060;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+}
+
+.direita{
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px #606060 solid;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: #606060 solid 1px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: #ffffff;
+    background-color: #606060;
+    text-align: right;
+    vertical-align: top;
+    font-weight: bolder;
+}
+
+table#tabelaspec td.cd {
+    color: black;
+    background-color: #cecece;
+    text-align: left;
+}
+
+table#tabelaspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    font-size: 8pt;
+    display: block;
+    float: right;
+    margin-top: 10px;
+
 }
 
 /* Formatação de imagens com legendas */
@@ -94,9 +179,9 @@ nav#menu h1{
 nav#menu ul{
     list-style: none;
     text-transform: uppercase;
-    position: absolute;
+    position: relative;
     top: -20px;
-    right: 20px;
+    left: 250px;
 }
 
 nav#menu li{
@@ -118,4 +203,47 @@ nav#menu a {
 
 nav#menu a:hover {
     color: white;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    margin-top: 10px;
+}
+aside#lateral h1{
+    font-family: 'FonteLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+    }
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
 }
